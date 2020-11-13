@@ -1,12 +1,15 @@
+import random
+
 def main():
-  
+
+  last = 13
+  rnd = random.randint(0, last)  
 
   f = open("quotes.txt")
   quotes = f.readlines()
   f.close()
 
-  for indQuote in quotes:
-    print(indQuote)
+  print(quotes[rnd])
 
 if __name__== "__main__":
   main()
